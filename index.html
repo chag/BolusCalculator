@@ -11,8 +11,40 @@
 </head>
 <body>
     
+<table>
+<tr>
+    <td><label for="BloodSugarLevel">BSL:</label></td>
+    <td><input name="BloodSugarLevel" type="number" min="1" max="999" autofocus required/></td>
+</tr>
+    
+    
+<tr>
+    <td><label for="Carbohydrates">Carbs:</label></td>
+    <td><input name="Carbohydrates" type="number" min="1" max="999"/></td>
+</tr>
 
+<tr>
+    <td><label for="Bolus">Bolus:</label></td>
+    <td><input name="Bolus" type="number" min="1" max="999" readonly/></td>
+</tr>
 
+<tr>
+    <td><label for="Target">Target:</label></td>
+    <td><input name="Target" type="number" required value="120" min="70" max="300" step="10"></td>
+</tr>
+
+<tr>
+    <td><label for="Divisor">Divisor:</label></td>
+    <td><input name="Divisor" type="number" required value="40" min="10" step="5"></td>
+</tr>
+    
+<tr>
+    <td><label for="CarbsPerUnit">Carbs/U:</label></td>
+    <td><input name="CarbsPerUnit" type="number" required value="10" min="0"></td>
+</tr>
+
+    
+</table>
     
 </body>
 </html>

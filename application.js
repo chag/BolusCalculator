@@ -1,9 +1,20 @@
 $(document).ready(function() {
+    $("input").change(function() {
+        $("input[name=Bolus]").val(Math.round((parseInt($("input[name=BloodSugarLevel]").val()) - parseInt($("input[name=Target]").val())) / parseInt($("input[name=Divisor]").val()) + 
+            parseInt($("input[name=Carbohydrates]").val() || "0")/ parseInt($("input[name=CarbsPerUnit]").val())));
+            
+        /*$("input[name=Bolus]").val(
+            Math.round(
+                ((parseInt($("input[name=BloodSugarLevel]").val()) - parseInt($("input[name=Target]").val())) / parseInt($("input[name=Divisor]").val())) +
+                (parseInt($("input[name=Carbs]").val()) / parseInt($("input[name=CarbsPerUnit]").val()))
+            )
+        );*/
+    });
+    
+    $("input").keyup(function(event) {
+        $(event.target).change();
+    });
 });
-
-function getDose(bs) {
-    return(Math.round((bs - $("input[name=Target]").val()) / $("input[name=Divisor]").val()));
-}
 
 function lpad(n, width, z) {
     z = z || '&nbsp;';

@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td {
+    width: 50%;
+    margin: 0;
+    padding: 8px 16px;
+}
+
+td:first-child {
+    text-align: right;
+}
+
+label {
+    width: 50%;
+    font-size: .5in;
+}
+
+input {
+    width: 100%;
+    font-size: .5in;
+    border: none;
+    background-color: transparent;
+}
