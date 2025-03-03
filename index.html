@@ -7,20 +7,20 @@
 	<script defer src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
 	<script defer src="application.js"></script>
 </head>
-<body>
+<body style="display:none!important;">
     
 <table>
 	<tr>
 		<td><label for="BloodSugarLevel">BSL:</label></td>
-		<td><input name="BloodSugarLevel" type="number" min="1" max="999" autofocus required/></td>
+		<td><input name="BloodSugarLevel" type="number" min="0" max="999" autofocus required/></td>
 	</tr>
 	<tr>
 		<td><label for="Carbohydrates">Carbs:</label></td>
-		<td><input name="Carbohydrates" type="number" min="1" max="999"/></td>
+		<td><input name="Carbohydrates" type="number" min="0" max="999"/></td>
 	</tr>
 	<tr>
 		<td><label for="Bolus">Bolus:</label></td>
-		<td><input name="Bolus" type="number" min="1" max="999" placeholder="NOT FOR MEDICAL USE" readonly/></td>
+		<td><input name="Bolus" type="number" min="0" max="999" placeholder="NOT FOR MEDICAL USE" readonly/></td>
 	</tr>
 	<tr>
 		<td><label for="Target">Target:</label></td>
